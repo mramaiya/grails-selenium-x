@@ -1,11 +1,7 @@
 class SeleniumXGrailsPlugin {
-    // the plugin version
     def version = "0.1"
-    // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.4 > *"
-    // the other plugins this plugin depends on
     def dependsOn = [:]
-    // resources that are excluded from plugin packaging
     def pluginExcludes = [
             "grails-app/views/error.gsp"
     ]
@@ -15,7 +11,6 @@ class SeleniumXGrailsPlugin {
     def title = "Selenium-x"
     def description = 'Selenium RC driver with support for parallel test execution on multiple servers and full database integration.'
 
-    // URL to the plugin's documentation
     def documentation = "http://grails.org/plugin/selenium-x"
 
     def doWithWebDescriptor = { xml ->
