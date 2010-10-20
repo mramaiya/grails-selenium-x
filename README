@@ -1,0 +1,20 @@
+This plugin allows parallel execution of tests as well as database integration.
+
+General configuration is in conf/SeleniumConfig.groovy
+
+selenium {
+    servers = [
+        [ name:'IE 8',    host: 'browserdev01', port:4444, browser:'*iehta',  url:'https://dev.inkchaser.com' ],
+        [ name:'Firefox', host: 'browserdev02', port:4444, browser:'firefox', url:'https://dev.inkchaser.com' ],
+    ]
+}
+
+General use is creating tests under test/selenium that extend SeleniumTestCase
+
+Executing tests is by test-app :selenium
+
+This will be better documented sometime in the future.
+
+Feel free to contact me with any questions.
+
+milan.ramaiya at gmail dot com
